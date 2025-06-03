@@ -1,0 +1,78 @@
+:root {
+    --color-primario: #0d6efd;
+    --color-secundario: #6c757d;
+    --color-exito: #198754;
+    --color-peligro: #dc3545;
+    --color-fondo: #f8f9fa;
+    --color-texto: #212529;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.hero-image {
+    height: 300px;
+    background-image: url('../img/principal.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.precio {
+    font-weight: bold;
+    color: var(--color-primario);
+}
+
+.descuento {
+    color: var(--color-peligro);
+    font-size: 0.9em;
+}
+
+.precio-final {
+    font-weight: bold;
+    color: var(--color-exito);
+    font-size: 1.1em;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .hero-image {
+        height: 200px;
+    }
+    
+    .card {
+        margin-bottom: 20px;
+    }
+}
+
+/* Formulario de registro */
+#registroForm {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
